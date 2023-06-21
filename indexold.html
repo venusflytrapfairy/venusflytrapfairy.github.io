@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DoBu Martial Arts Academy</title>
+    <link rel="icon" type="image/x-icon" href="dobu.png">
+</head>
+<body>
+    <style>
+    body {
+          /*background-image: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,1)),url("https://png.pngtree.com/thumb_back/fh260/back_our/20190620/ourmid/pngtree-chinese-style-hand-painted-shaolin-kung-fu-martial-arts-poster-background-image_159086.jpg");
+          */
+          background-image:url("https://png.pngtree.com/thumb_back/fh260/back_our/20190620/ourmid/pngtree-chinese-style-hand-painted-shaolin-kung-fu-martial-arts-poster-background-image_159086.jpg");
+          background-repeat: no-repeat;
+          background-size: cover;
+    }
+     .column-right {
+        position: absolute;
+        top: 0;
+     }
+    .navbar {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        .navbar li {
+            float: left;
+        }
+
+        .navbar li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .navbar li a:hover {
+            background-color: #111;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #000000;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color:  #402626;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+
+    .dropdown-content a:hover {
+        color: red; /* Change the color when hovering over an option */
+    }
+
+
+    </style>
+
+      <script>
+        function toggleDropdown() {
+            var dropdownContent = document.getElementById("dropdown-content");
+            dropdownContent.style.display = dropdownContent.style.display === "none" ? "block" : "none";
+        }
+    </script>
+
+    <div class = 'column-left'>
+        <h1 style="text-align:center;color:black;margin-left:100px;">Dobu Martial Arts Academy</h1>
+        <h2 style= "text-align:center;color:black;margin-left:100px;" > Unleash Your Inner Warrior </h2>
+    </div>
+    <div class = 'column-right'>
+        <a href="index.html"><img src="dobu.png" width="100" height="100"> </a>
+    </div>
+
+     <!-- Navigation bar HTML -->
+    <ul class="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li class="dropdown">
+         <a href="#" class="dropbtn" onclick="toggleDropdown()">Courses</a>
+    <div class="dropdown-content" id="dropdown-content">
+        <a href="specialist-courses.html">Specialist Courses</a>
+        <a href="prices-packages.html">Prices & Packages</a>
+        <li><a href="instructors.html">Instructors</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</body>
+</html>
